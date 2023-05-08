@@ -129,9 +129,10 @@
   <div class="container_product">
     {% for data in form_data %}
     <div class="product_card">
-  
+      <div class="product_image_container">
       {% load static %}
-      <img src="{% static 'images/p1.png' %}"/> 
+      <img src="{% static 'images/p1.png' %}" class="product_image"/> 
+      </div>
       <div class="product_info">
         <h5>
           {{ data.name }}
@@ -141,7 +142,7 @@
           {{ data.price }} ₺
          </h6>
       </div>
-      <button class="product_button" id="product_button" onclick="buttonClick()">Sepete Ekle Amk</button>
+      <button class="product_button" id="product_button" onclick="buttonClick()">Sepete Ekle</button>
     </div>
     {% endfor %}
   </div>

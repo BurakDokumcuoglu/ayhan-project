@@ -1,0 +1,30 @@
+form{
+    margin:auto;
+    max-width: 400px;
+}
+
+h2{
+    margin-top:100px;
+    text-align: center;
+}
+
+.login_button{
+    margin:0 auto;
+    display:block;
+    background-color: lightblue;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.forgot_password_text{
+    font-size: 12px;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+input{
+    border-radius: 30px;
+}

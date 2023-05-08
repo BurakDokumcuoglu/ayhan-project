@@ -1,8 +1,40 @@
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  {% load static %}
+  <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="">
+  <title>Famms - Fashion HTML Template</title>
+  <!-- bootstrap core css -->
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+  <!-- font awesome style -->
+  {% load static %}
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  {% load static %}
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  {% load static %}
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+  {% load static %}
+  <link href="{% static 'css/products.css' %}" rel="stylesheet" />
+  {% load static %}
+  <link href="{% static 'css/login.css' %}" rel="stylesheet" />
+</head>
 
-
-<h2>Login</h2>
+<h2>Giriş Yap</h2>
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Login</button>
+    <button type="submit" class="login_button">Giriş Yap</button>
+    <div class="forgot_password_text">Şifremi Unuttum</div>
 </form>
+</html>
