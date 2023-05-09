@@ -1,0 +1,35 @@
+.payment-header{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment_form_container{
+    margin:auto;
+    max-width: 400px;
+    
+}
+
+
+.payment_button{
+    margin:0 auto !important;
+    display:block !important;
+    background-color: lightblue !important;
+    width: 200px !important;
+    height: 50px !important;
+    border-radius: 30px !important;
+    color:black !important;
+    border:black !important;
+    font-weight: 500 !important;
+}
+
+input[type=submit] {
+    border:1px solid black !important;
+  }
+
+.visa_master_img_container{
+    width: 250px;
+    height: 300px;
+    background-image: url("https://dharmamerchantservices.com/wp-content/uploads/2015/04/vmc.gif");
+    background-repeat: no-repeat;
+    margin: auto;
+}

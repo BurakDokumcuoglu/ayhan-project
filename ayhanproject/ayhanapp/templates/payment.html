@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="">
     <title>Ödeme Sayfası</title>
+     <!-- bootstrap core css -->
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+  <!-- font awesome style -->
+  {% load static %}
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  {% load static %}
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  {% load static %}
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+  {% load static %}
+  <link href="{% static 'css/products.css' %}" rel="stylesheet" />
+  {% load static %}
+  <link href="{% static 'css/login.css' %}" rel="stylesheet" />
+  {% load static %}
+  <link href="{% static 'css/payment.css' %}" rel="stylesheet" />
   </head>
   <body>
-    <h1>Ödeme Yap</h1>
-    <form action="process_payment.php" method="post">
+    <h1 class="payment-header">Ödeme Yap</h1>
+   <div class="payment_form_container">
+    <form action="process_payment.php" method="post" class="payment_form">
       <label for="name">Ad Soyad:</label><br>
       <input type="text" id="name" name="name" required><br>
       <label for="card_number">Kredi Kartı Numarası:</label><br>
@@ -16,7 +45,9 @@
       <input type="text" id="cvv" name="cvv" required><br>
       <label for="amount">Tutar:</label><br>
       <input type="text" id="amount" name="amount" required><br>
-      <input type="submit" value="Ödeme Yap">
+      <input type="submit" value="Ödeme Yap" class="payment_button">
     </form>
+   </div>
+   <div class="visa_master_img_container"></div>
   </body>
 </html>
